@@ -29,4 +29,5 @@ RSpec.describe CommentsController, type: :controller do
     post :create, params: { gram_id: 'YOLOSWAG', comment: { message: 'awesome gram' } }
     expect(response).to have_http_status :not_found
   end
+  end
 end
